@@ -32,6 +32,53 @@
 /*DESPLAZAMIENTO PARA EL MENU LATERAL*/
 .modal-open-left {
   transform: translate(320px, 0);
+<<<<<<< HEAD
+=======
+}
+.indicators li {
+  line-height: 30px;
+}
+.indicators a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+.indicators span {
+  width: 14px;
+  height: 14px;
+  background: white;
+  border-radius: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.indicators .active {
+  background: orange;
+}
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1em;
+  }
+  .indicators {
+    right: 11px;
+  }
+  .indicators li {
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 1152px) {
+  .indicators {
+    right: 25px;
+  }
+}
+*::-webkit-scrollbar{
+  width:6px!important
+}
+*::-webkit-scrollbar-thumb{
+  background-color:rgba(0,0,0,.2)
+}
+*::-webkit-scrollbar-track{
+  background:rgba(255,255,255,.08)
+>>>>>>> origin/master
 }
 
 /*ASIDE*/
