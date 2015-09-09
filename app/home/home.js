@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.home', ['ngRoute', 'ngAside'])
+angular.module('myApp.home', ['ngRoute', 'ui.bootstrap', 'ngAside'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/home', {
@@ -11,7 +11,7 @@ angular.module('myApp.home', ['ngRoute', 'ngAside'])
 
 .controller('Home1Ctrl', ['$scop','$asid',function($scope, $aside) {
   var asideInstance = $aside.open({
-      templateUrl: 'aside.html',
+      templateUrl: 'aside/aside.html',
       controller: 'AsideCtrl',
       placement: 'left',
       size: 'lg'
