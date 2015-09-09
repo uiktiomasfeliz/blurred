@@ -29,6 +29,19 @@
   padding: 0;
 }
 
+/*DESPLAZAMIENTO PARA EL MENU LATERAL*/
 .modal-open-left {
   transform: translate(320px, 0);
+}
+
+/*ASIDE*/
+.user-icon {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.aside {
+  background-color: #78909c;
+  color: #fff;
+  height: 100%;
 }
