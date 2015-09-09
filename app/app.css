@@ -36,11 +36,11 @@ a:hover {
   background-image: url(http://uploads.webflow.com/52f18c8e0cb131013c000290/52f191cb0128ab830c000348_blur-street.jpg);
   background-size: cover;
 }
-.main > div:nth-child(even) {
+.main > div:nth-child(3) {
   background: #2196F3;
   color: aliceblue;
 }
-.main > div:nth-child(3) {
+.main > div:nth-child(even) {
   background: #FF4081;
   color: aliceblue;
 }
