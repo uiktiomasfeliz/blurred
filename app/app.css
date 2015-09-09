@@ -32,8 +32,6 @@
 /*DESPLAZAMIENTO PARA EL MENU LATERAL*/
 .modal-open-left {
   transform: translate(320px, 0);
-<<<<<<< HEAD
-=======
 }
 .indicators li {
   line-height: 30px;
@@ -78,7 +76,6 @@
 }
 *::-webkit-scrollbar-track{
   background:rgba(255,255,255,.08)
->>>>>>> origin/master
 }
 
 /*ASIDE*/
