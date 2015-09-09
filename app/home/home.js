@@ -12,8 +12,12 @@ angular.module('myApp.home', ['ngRoute', 'ui.bootstrap', 'ngAside'])
 .controller('Home1Ctrl', ['$scope','$aside',function($scope, $aside) {
   var asideInstance = $aside.open({
       templateUrl: 'aside/aside.html',
-      controller: 'AsideCtrl',
       placement: 'left',
-      size: 'lg'
+      size: 'sm',
+      backdrop: false,
+      controller: function($scope, $modalInstance) {
+
+      }
     });
+
 }]);
