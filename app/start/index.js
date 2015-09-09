@@ -1,15 +1,15 @@
 'use strict';
 
-angular.module('myApp.home', ['ngRoute', 'ngAside'])
+angular.module('myApp.index', ['ngRoute', 'snapscroll'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/home', {
-    templateUrl: 'home/home.html',
-    controller: 'Home1Ctrl'
+  $routeProvider.when('/', {
+    templateUrl: 'index/index.html',
+    controller: 'Index1Ctrl'
   });
 }])
 
-.controller('Home1Ctrl', ['$scop','$asid',function($scope, $aside) {
+.controller('Index1Ctrl', [function($scope, $aside) {
   var asideInstance = $aside.open({
       templateUrl: 'aside.html',
       controller: 'AsideCtrl',
