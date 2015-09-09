@@ -122,59 +122,29 @@
   <div keyboard-keys>
     <div class="main" snapscroll fit-window-height snap-index="snapIndex" after-snap="afterSnap(snapIndex)" snap-animation="snapAnimation" ng-swipe-up="swipeUp()" ng-swipe-down="swipeDown()">
       <div>
-        <h1>angular-snapscroll</h1>
-        <p>angular-snapscroll adds vertical scroll-and-snap functionality to angular.</p>
-        <ol>
-          <li>JS-only implementation</li>
-          <li>Requires only angular core</li>
-          <li>5.7kB when minified, 2.1kB when gzipped</li>
-        </ol>
-        <p>This is a suite of snapscroll examples that demonstrantes:</p>
-        <ul>
-          <li>full-page snapscroll (fit-window-height attribute)</li>
-          <li>keyboard navigation (try pressing the up and down arrow keys)</li>
-          <li>resetting current snap position after a manual scroll (try to scroll by dragging the scrollbar)</li>
-          <li>snapIndex binding (the pagination showing on the right)</li>
-          <li>persisting snapIndex on page reload (using window.location.hash)</li>
-          <li>touch support (using <a href="https://github.com/marmorkuchen-net/angular-swipe">angular-swipe</a> module)</li>
-          <li><a href="#" ng-click="snapIndex=1">nested snapscrolls</a></li>
-          <li><a href="#" ng-click="snapIndex=2">before and after callbacks</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Nested snapscrolls</h3>
-        <p>Instances can be nested, side by side etc and won't interfere with each other. The first nested snapscroll below also demostrates how to keep vertical swipe gestures localized to a nested snapscroll instance.</p>
+        <h1>Blurred site</h1>
+        <p>Aqui vamos a vender tus fotos a precios resonables</p>
 
       </div>
       <div>
-        <h3>Callbacks</h3>
-        <p>Callbacks are passed a snapIndex parameter. In the beforeSnap callback, this is the index being snapped to while in the afterSnap callback, it's the index just snapped to.</p>
-        <p>Returning false in the beforeSnap callback disables snapping. In this example, it's impossible to snap to the last snap (unless by scrolling manually).</p>
-        <p>Note: callbacks are executed on the initial snap on page load and also after a manual scroll.</p>
+        <h3>Tios</h3>
+        <p>Fotacos de canis</p>
 
-        <div class="clearfix">
-          <div>
-            <p>before-snap messages:</p>
-            <ul>
-              <li ng-repeat="message in beforeSnapMessages track by $index">{{ message }}</li>
-            </ul>
-          </div>
-          <div>
-            <p>after-snap messages:</p>
-            <ul>
-              <li ng-repeat="message in afterSnapMessages track by $index">{{ message }}</li>
-            </ul>
-          </div>
-        </div>
       </div>
+      <div>
+        <h3>Tias</h3>
+        <p>Fotacos de chonis.</p>
+      </div>
+      <!--
       <div></div>
       <div></div>
+      -->
     </div>
     <ul class="indicators">
       <li><a ng-click="snapIndex=0"><span ng-class="{active: snapIndex == 0}"></span></a></li>
       <li><a ng-click="snapIndex=1"><span ng-class="{active: snapIndex == 1}"></span></a></li>
       <li><a ng-click="snapIndex=2"><span ng-class="{active: snapIndex == 2}"></span></a></li>
-      <li><a ng-click="snapIndex=3"><span ng-class="{active: snapIndex == 3}"></span></a></li>
-      <li><a ng-click="snapIndex=4"><span ng-class="{active: snapIndex == 4}"></span></a></li>
+      <!--<li><a ng-click="snapIndex=3"><span ng-class="{active: snapIndex == 3}"></span></a></li>
+      <li><a ng-click="snapIndex=4"><span ng-class="{active: snapIndex == 4}"></span></a></li>-->
     </ul>
 </div>
