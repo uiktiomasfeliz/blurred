@@ -9,7 +9,7 @@ angular.module('myApp.home', ['ngRoute', 'ui.bootstrap', 'ngAside'])
   });
 }])
 
-.controller('Home1Ctrl', ['$scop','$asid',function($scope, $aside) {
+.controller('Home1Ctrl', ['$scope','$aside',function($scope, $aside) {
   var asideInstance = $aside.open({
       templateUrl: 'aside/aside.html',
       controller: 'AsideCtrl',

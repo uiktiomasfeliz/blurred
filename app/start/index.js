@@ -9,11 +9,6 @@ angular.module('myApp.index', ['ngRoute', 'snapscroll'])
   });
 }])
 
-.controller('Index1Ctrl', [function($scope, $aside) {
-  var asideInstance = $aside.open({
-      templateUrl: 'aside.html',
-      controller: 'AsideCtrl',
-      placement: 'left',
-      size: 'lg'
-    });
+.controller('Index1Ctrl', ['$scope',function($scope) {
+
 }]);
