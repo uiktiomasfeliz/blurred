@@ -10,7 +10,7 @@ angular.module('myApp.home', ['ngRoute', 'ui.bootstrap', 'ngAside'])
 }])
 
 .controller('Home1Ctrl', ['$scope','$aside',function($scope, $aside) {
-  var asideInstance = $aside.open({
+  /*var asideInstance = $aside.open({
       templateUrl: 'aside/aside.html',
       placement: 'left',
       size: 'sm',
@@ -18,6 +18,6 @@ angular.module('myApp.home', ['ngRoute', 'ui.bootstrap', 'ngAside'])
       controller: function($scope, $modalInstance) {
 
       }
-    });
+    });*/
 
 }]);
