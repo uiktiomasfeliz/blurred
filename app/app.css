@@ -88,12 +88,11 @@ a:hover {
   list-style: none;
   z-index: 1;
 }
-<<<<<<< HEAD
 
 /*DESPLAZAMIENTO PARA EL MENU LATERAL*/
 .modal-open-left {
   transform: translate(320px, 0);
-=======
+}
 .indicators li {
   line-height: 30px;
 }
@@ -137,7 +136,6 @@ a:hover {
 }
 *::-webkit-scrollbar-track{
   background:rgba(255,255,255,.08)
->>>>>>> origin/master
 }
 
 /*ASIDE*/
