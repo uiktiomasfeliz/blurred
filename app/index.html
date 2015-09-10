@@ -26,13 +26,13 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12 nopadding">
-        <div class="col-md-3 nopadding">
-          <div ng-include src="'aside/aside.html'"></div>
+        <div ng-if="showSection" class="col-md-3 nopadding">
+          <div  ng-include src="'aside/aside.html'"></div>
         </div>
-        <div class="col-md-9 nopadding">
-          <div ng-include src="'navbar/navbar.html'"></div>
-          <div ng-view></div>
+        <div ng-if="showSection" class="col-md-9 nopadding">
+          <div  ng-include src="'navbar/navbar.html'"></div>
         </div>
+        <div ng-view></div>
       </div>
     </div>
   </div>

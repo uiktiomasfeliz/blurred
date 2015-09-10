@@ -9,7 +9,12 @@ angular.module('myApp', [
   'myApp.home',
   'myApp.homeService',
   'myApp.index'
-]).
-config(['$routeProvider', function($routeProvider) {
+])
+.config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/home'});
-}]);
+}])
+.run(function($rootScope, $location) {
+  $rootScope.$on('$routeChangeSuccess', function() {
+      $rootScope.showSection = $location.path() !== "/";
+  });
+});
