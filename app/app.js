@@ -7,6 +7,7 @@ angular.module('myApp', [
   'myApp.view2',
   'myApp.version',
   'myApp.home',
+  'myApp.homeService',
   'myApp.index'
 ]).
 config(['$routeProvider', function($routeProvider) {
