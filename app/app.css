@@ -172,3 +172,33 @@ a:hover {
 .color-male {
   color: blue;
 }
+
+/*HOME*/
+.home-div {
+  background-color: gray;
+}
+
+.content-parent-div {
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.content-col-user-icon {
+  margin-top: 40px;
+}
+
+.content-user-icon {
+  max-width: 70px;
+  max-height: 70px;
+}
+
+.content-user-imgs {
+  max-height: 150px;
+  margin-left: 15px;
+}
+
+.slick-imgs {
+  width: 90%;
+  margin-left: 40px;
+}
