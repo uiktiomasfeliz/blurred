@@ -19,6 +19,7 @@
     "angular-slick-carousel": "*",
     "jquery": "*",
     "angular-facebook":"*",
-    "oclazyload":"*"
+    "oclazyload":"*",
+    "ngGallery":"*"
   }
 }
