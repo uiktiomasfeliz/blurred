@@ -17,6 +17,8 @@
     "angular-snapscroll": "*",
     "angular-slick": "*",
     "angular-slick-carousel": "*",
-    "jquery": "*"
+    "jquery": "*",
+    "angular-facebook":"*",
+    "oclazyload":"*"
   }
 }
