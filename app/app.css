@@ -186,6 +186,10 @@ a:hover {
   background-color: gray;
 }
 
+/*PROFILE*/
+.profile-div {
+  background-color: #F5DA81;
+}
 .content-parent-div {
   padding-bottom: 40px;
   padding-left: 20px;

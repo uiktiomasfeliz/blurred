@@ -12,6 +12,12 @@ angular.module('myApp', [
 ])
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/home'});
+
+  $routeProvider.when('/profile', {
+    templateUrl: "profile/profile.html"/*,
+    controller: "profile/profile.js"*/
+  });
+
 }])
 .run(function($rootScope, $location) {
   $rootScope.$on('$routeChangeSuccess', function() {
