@@ -214,3 +214,8 @@ a:hover {
   width: 90%;
   margin-left: 40px;
 }
+
+.scroll-area {
+  height: 700px;
+  overflow: auto;
+}

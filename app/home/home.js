@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.home', ['ngRoute', 'ui.bootstrap', 'ngAside', 'slick'])
+angular.module('myApp.home', ['ngRoute', 'ui.bootstrap', 'ngAside', 'slick', 'infinite-scroll'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/home', {
@@ -11,9 +11,18 @@ angular.module('myApp.home', ['ngRoute', 'ui.bootstrap', 'ngAside', 'slick'])
 
 .controller('HomeCtrl', ['$scope','$aside', 'homeService',function($scope, $aside, homeService) {
 
+  $scope.content = [];
+  $scope.originContent;
+
   homeService.getContent().then(function(data) {
-    $scope.content = data;
-    console.log($scope.content);
+    $scope.originContent = data;
+    $scope.content.push(data[0]);
+    $scope.content.push(data[1]);
+    $scope.content.push(data[2]);
   });
+
+  $scope.loadMore = function() {
+    $scope.content.push($scope.originContent[$scope.content.length]);
+  };
 
 }]);
