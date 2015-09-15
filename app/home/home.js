@@ -12,7 +12,7 @@ angular.module('myApp.home', ['ngRoute', 'ui.bootstrap', 'ngAside', 'slick', 'in
 .controller('HomeCtrl', ['$scope','$aside', 'homeService',function($scope, $aside, homeService) {
 
   $scope.content = [];
-  $scope.originContent;
+  $scope.originContent = ``;
 
   homeService.getContent().then(function(data) {
     $scope.originContent = data;
