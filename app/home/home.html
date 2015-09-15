@@ -1,6 +1,6 @@
 <div class="home-div scroll-area">
   <div infinite-scroll='loadMore()' infinite-scroll-distance='2'>
-    <div ng-repeat="item in content" class="content-parent-div">
+    <div ng-repeat="item in content track by $index" class="content-parent-div">
       <div class="row">
           <div class="col-md-1 content-col-user-icon">
             <img ng-src={{item.icon}} class="img-circle content-user-icon">
