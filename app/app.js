@@ -8,15 +8,15 @@ angular.module('myApp', [
   'myApp.version',
   'myApp.home',
   'myApp.homeService',
-  'myApp.index'
+  'myApp.index',
+  'myApp.profile'
 ])
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/home'});
 
-  $routeProvider.when('/profile', {
-    templateUrl: "profile/profile.html"/*,
-    controller: "profile/profile.js"*/
-  });
+  /*$routeProvider.when('/profile', {
+    templateUrl: "profile/profile.html"
+  });*/
 
 }])
 .run(function($rootScope, $location) {

@@ -38,35 +38,39 @@
                     <tbody>
                       <tr>
                         <td>Nombre:</td>
-                        <td>Paco</td>
+                        <td ng-hide="isEdit">Paco</td>
+                        <td ng-show="isEdit"><input type="text" class="form-control" id="Nombre" value="Paco">
                       </tr>
                       <tr>
                         <td>Apellidos:</td>
-                        <td>Perez</td>
+                        <td ng-hide="isEdit">Perez</td>
+                        <td ng-show="isEdit"><input type="text" class="form-control" id="Apellidos" value="Perez">
                       </tr>
                       <tr>
                         <td>Fecha Nacimiento</td>
-                        <td>01/24/1988</td>
-                      </tr>
-
-                         <tr>
-                             <tr>
-                        <td>Sexo</td>
-                        <td>Hombre</td>
-                      </tr>
-                        <tr>
-                        <td>Dirección</td>
-                        <td>Calle Larios, Malaga</td>
+                        <td ng-hide="isEdit">01/24/1988</td>
+                        <td ng-show="isEdit"><input type="text" class="form-control" id="FechaNac" value="01/24/1988">
                       </tr>
                       <tr>
-                        <td>Email</td>
-                        <td><a href="mailto:damian_8_8@hotmail.com">damian_8_8@hotmail.com</a></td>
+                        <tr>
+                          <td>Sexo</td>
+                          <td ng-hide="isEdit">Hombre</td>
+                          <td ng-show="isEdit"><input type="text" class="form-control" id="Sexo" value="Hombre">
+                        </tr>
+                        <tr>
+                          <td>Dirección</td>
+                          <td ng-hide="isEdit">Calle Larios, Malaga</td>
+                          <td ng-show="isEdit"><input type="text" class="form-control" id="Dirección" value="Calle Larios, Malaga">
+                        </tr>
+                        <tr>
+                          <td>Email</td>
+                          <td ng-hide="isEdit"><a href="mailto:damian_8_8@hotmail.com">damian_8_8@hotmail.com</a></td>
+                          <td ng-show="isEdit"><input type="text" class="form-control" id="Dirección" value="damian_8_8@hotmail.com">
+                        </tr>
+                          <td>Telefono</td>
+                          <td ng-hide="isEdit">123-4567-890</td>
+                          <td ng-show="isEdit"><input type="text" class="form-control" id="Telefono" value="123-4567-890">
                       </tr>
-                        <td>Telefono</td>
-                        <td>123-4567-890</td>
-
-                      </tr>
-
                     </tbody>
                   </table>
 
@@ -78,7 +82,7 @@
                  <div class="panel-footer">
                         <a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
                         <span class="pull-right">
-                            <a href="edit.html" data-original-title="Edit this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></a>
+                            <a ng-click="troggleEdit()" data-original-title="Edit this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></a>
                             <a data-original-title="Remove this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
                         </span>
                     </div>
