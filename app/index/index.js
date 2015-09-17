@@ -110,6 +110,7 @@ angular.module('myApp.index', ['ngRoute', 'swipe', 'snapscroll', 'oc.lazyLoad', 
       Facebook.getLoginStatus(function(response) {
         if (response.status == 'connected') {
           userIsConnected = true;
+          $scope.me();
         }
       });
 

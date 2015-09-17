@@ -260,3 +260,34 @@ a:hover {
 .toppad
 {margin-top:20px;
 }
+
+
+/* NEW LOOK */
+
+.lft{
+
+  /*background-color: #1f1815;
+      background-attachment: scroll,	fixed;
+      background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+      background-position: top left,	top left;
+      background-repeat: repeat,	no-repeat;
+      background-size: auto,	auto 100%;
+      color: rgba(255, 255, 255, 0.5);*/
+      height: 100%;
+      left: 0;
+      /*padding: 8em 4em 0 0;
+      position: fixed;*/
+      position: absolute;
+      text-align: right;
+      top: 0;
+      width: 25%;
+}
+
+.cont{
+
+  margin-left: 25%;
+  /*max-width: 54em;
+  padding: 8em 4em 4em 4em;*/
+  width: calc(100% - 25%);
+
+}
