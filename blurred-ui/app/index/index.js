@@ -1,6 +1,6 @@
 'use strict';
 app
-.controller('Index1Ctrl', ['$scope', '$window', 'Facebook', function($scope, $window, Facebook) {
+.controller('Index1Ctrl', ['$scope', '$window', 'Facebook', 'ngDialog', function($scope, $window, Facebook, ngDialog) {
     //snapscroll settings
     var index = parseInt($window.location.hash.slice(1), 10);
     $scope.snapAnimation = false; // turn animation off for the initial snap on page load
@@ -145,6 +145,22 @@ app
       /**
        * FACEBOOK END HERE
        */
+
+     /**
+      * NGMODAL
+      */
+      $scope.openDialog = function () {
+        //controller: 'InsideCtrl',
+         var new_dialog = ngDialog.open({
+           template: 'firstDialogId',
+           className: 'ngdialog-theme-plain custom-width',
+            data: {foo: 'some data'}
+          });
+           // example on checking whether created `new_dialog` is open
+           /*$timeout(function() {
+               console.log(ngDialog.isOpen(new_dialog.id));
+           }, 2000)*/
+         };
 
 }])
 ;

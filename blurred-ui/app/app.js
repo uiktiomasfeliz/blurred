@@ -14,6 +14,14 @@ app
                return $ocLazyLoad.load([
                   {
                     files: ['index/indexDirective.js']
+                  },
+                  {
+                    name: 'ngDialog',
+                    files: ['bower_components/ngDialog/js/ngDialog.js'
+                            ,'bower_components/ngDialog/css/ngDialog.css'
+                            ,'bower_components/ngDialog/css/ngDialog-theme-default.css'
+                            ,'bower_components/ngDialog/css/ngDialog-theme-plain.css'
+                          ]
                   }
                ]);
           }

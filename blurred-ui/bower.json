@@ -20,6 +20,7 @@
     "angular-facebook":"*",
     "oclazyload":"*",
     "ngGallery":"*",
-    "ngInfiniteScroll":"*"
+    "ngInfiniteScroll":"*",
+    "ngDialog":"*"
   }
 }
