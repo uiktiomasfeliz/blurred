@@ -1,0 +1,25 @@
+{
+  "name": "angular-ui-seed",
+  "description": "A starter project for AngularJS",
+  "version": "0.0.2",
+  "homepage": "https://github.com/dokko1230/angular-ui-seed",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "latest",
+    "angular-ui-router": "~0.2.10",
+    "angular-loader": "1.2.x",
+    "angular-mocks": "~1.2.x",
+    "html5-boilerplate": "~4.3.0",
+    "angular-aside": "*",
+    "angular-bootstrap": "*",
+    "angular-swipe": "~0.1.0",
+    "angular-snapscroll": "*",
+    "angular-slick": "*",
+    "angular-slick-carousel": "*",
+    "jquery": "*",
+    "angular-facebook":"*",
+    "oclazyload":"*",
+    "ngGallery":"*",
+    "ngInfiniteScroll":"*"
+  }
+}
