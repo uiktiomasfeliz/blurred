@@ -27,7 +27,7 @@ app
           }
         ]
       },
-      controller: 'Index1Ctrl'
+      controller: 'IndexCtrl'
     })
     .state('main', {
       url: '',

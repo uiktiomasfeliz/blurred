@@ -1,6 +1,6 @@
 'use strict';
 app
-.controller('Index1Ctrl', ['$scope', '$window', 'Facebook', 'ngDialog', function($scope, $window, Facebook, ngDialog) {
+.controller('IndexCtrl', ['$scope', '$window', 'Facebook', 'ngDialog', function($scope, $window, Facebook, ngDialog) {
     //snapscroll settings
     var index = parseInt($window.location.hash.slice(1), 10);
     $scope.snapAnimation = false; // turn animation off for the initial snap on page load
