@@ -11,27 +11,46 @@ app
       resolve: {
         loadMyPlugins: ['$ocLazyLoad', function($ocLazyLoad) {
         // you can lazy load files for an existing module
-               return $ocLazyLoad.load([
-                  {
-                    files: ['index/indexDirective.js']
-                  },
-                  {
-                    name: 'ngDialog',
-                    files: ['bower_components/ngDialog/js/ngDialog.js'
-                            ,'bower_components/ngDialog/css/ngDialog.css'
-                            ,'bower_components/ngDialog/css/ngDialog-theme-default.css'
-                            ,'bower_components/ngDialog/css/ngDialog-theme-plain.css'
-                          ]
-                  }
-               ]);
-          }
-        ]
+         return $ocLazyLoad.load([
+            {
+              files: ['index/indexDirective.js']
+            },
+            {
+              name: 'ngDialog',
+              files: ['bower_components/ngDialog/js/ngDialog.js'
+                      ,'bower_components/ngDialog/css/ngDialog.css'
+                      ,'bower_components/ngDialog/css/ngDialog-theme-default.css'
+                      ,'bower_components/ngDialog/css/ngDialog-theme-plain.css'
+                    ]
+            }
+         ]);
+        }
+      ]
       },
       controller: 'IndexCtrl'
     })
     .state('main', {
       url: '',
-      templateUrl: 'resources/templates/main.tpl.html'
+      templateUrl: 'resources/templates/main.tpl.html',
+      resolve: {
+        loadMyPlugins: ['$ocLazyLoad', function($ocLazyLoad) {
+        // you can lazy load files for an existing module
+         return $ocLazyLoad.load([
+            {
+              files: ['index/indexDirective.js']
+            },
+            {
+              name: 'ngDialog',
+              files: ['bower_components/ngDialog/js/ngDialog.js'
+                      ,'bower_components/ngDialog/css/ngDialog.css'
+                      ,'bower_components/ngDialog/css/ngDialog-theme-default.css'
+                      ,'bower_components/ngDialog/css/ngDialog-theme-plain.css'
+                    ]
+            }
+         ]);
+        }
+      ]
+      }
     })
     .state('main.home', {
       url: '/home',
@@ -43,6 +62,17 @@ app
       templateUrl: 'profile/profile.html',
       controller: 'profileCtrl'
     });
-
+    /*
+    $ocLazyLoadProvider.config({
+      modules: [{
+        name: 'ngDialog',
+        files: ['bower_components/ngDialog/js/ngDialog.js'
+                ,'bower_components/ngDialog/css/ngDialog.css'
+                ,'bower_components/ngDialog/css/ngDialog-theme-default.css'
+                ,'bower_components/ngDialog/css/ngDialog-theme-plain.css'
+              ]
+      }]
+    });
+    */
     FacebookProvider.init('873001566117790');
 }]);
