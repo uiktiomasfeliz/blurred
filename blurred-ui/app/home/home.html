@@ -17,21 +17,26 @@
 								<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
 							</footer>
 								-->
-								<div ng-repeat="item in content">
 
-							    <div class="row">
-							        <div class="2u 12u$(mobile) col-md-1 content-col-user-icon">
-							          <img ng-src={{item.icon}} class="img-circle content-user-icon">
-							        </div>
-							        <div class="10u 12u$(mobile) col-md-11 nopadding">
-							          <slick lazy-load="ondemand" slides-to-show="3" slides-to-scroll="1" variable-width="true" class="slick-imgs">
-							            <div ng-repeat="image in item.images">
-							                <img  ng-src={{image.url}} class="img-rounded content-user-imgs">
-							            </div>
-							          </slick>
-							        </div>
-							    </div>
-							  </div>
+								  <div infinite-scroll='loadMore()' infinite-scroll-distance='2'>
+
+										<div ng-repeat="item in content  track by $index">
+
+									    <div class="row">
+									        <div class="2u 12u$(mobile) col-md-1 content-col-user-icon">
+									          <img ng-src={{item.icon}} class="img-circle content-user-icon">
+									        </div>
+									        <div class="10u 12u$(mobile) col-md-11 nopadding">
+									          <slick lazy-load="ondemand" slides-to-show="3" slides-to-scroll="1" variable-width="true" class="slick-imgs">
+									            <div ng-repeat="image in item.images">
+									                <img  ng-src={{image.url}} class="img-rounded content-user-imgs">
+									            </div>
+									          </slick>
+									        </div>
+									    </div>
+									  </div>
+
+								</div>
 
 						</div>
 					</section>
