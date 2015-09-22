@@ -5,7 +5,7 @@
 				<!-- Intro -->
 					<section id="top" class="one dark cover">
 						<div class="container">
-
+							<!--
 							<header>
 								<h2 class="alt">Hi! I'm <strong>Prologue</strong>, a <a href="http://html5up.net/license">free</a> responsive<br />
 								site template designed by <a href="http://html5up.net">HTML5 UP</a>.</h2>
@@ -16,11 +16,27 @@
 							<footer>
 								<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
 							</footer>
+								-->
+								<div ng-repeat="item in content">
+
+							    <div class="row">
+							        <div class="2u 12u$(mobile) col-md-1 content-col-user-icon">
+							          <img ng-src={{item.icon}} class="img-circle content-user-icon">
+							        </div>
+							        <div class="10u 12u$(mobile) col-md-11 nopadding">
+							          <slick lazy-load="ondemand" slides-to-show="3" slides-to-scroll="1" variable-width="true" class="slick-imgs">
+							            <div ng-repeat="image in item.images">
+							                <img  ng-src={{image.url}} class="img-rounded content-user-imgs">
+							            </div>
+							          </slick>
+							        </div>
+							    </div>
+							  </div>
 
 						</div>
 					</section>
 
-				<!-- Portfolio -->
+				<!-- Portfolio
 					<section id="portfolio" class="two">
 						<div class="container">
 
@@ -80,8 +96,8 @@
 
 						</div>
 					</section>
-
-				<!-- About Me -->
+					-->
+				<!-- About Me
 					<section id="about" class="three">
 						<div class="container">
 
@@ -100,8 +116,8 @@
 
 						</div>
 					</section>
-
-				<!-- Contact -->
+					-->
+				<!-- Contact
 					<section id="contact" class="four">
 						<div class="container">
 
@@ -131,13 +147,15 @@
 					</section>
 
 			</div>
-
-		<!-- Footer -->
+			-->
+		<!-- Footer
 			<div id="footer">
-
-				<!-- Copyright -->
+		-->
+				<!-- Copyright
 					<ul class="copyright">
 						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 
 			</div>
+		-->
+</div>

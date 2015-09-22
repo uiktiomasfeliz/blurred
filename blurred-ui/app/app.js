@@ -1,4 +1,4 @@
-var app = angular.module('app', ['ui.router', 'swipe', 'snapscroll', 'oc.lazyLoad', 'facebook']);
+var app = angular.module('app', ['ui.router', 'swipe', 'snapscroll', 'oc.lazyLoad', 'facebook' , 'ui.bootstrap', 'slick', 'infinite-scroll']);
 app
 .config(['$stateProvider', '$ocLazyLoadProvider', 'FacebookProvider', '$urlRouterProvider', function($stateProvider, $ocLazyLoadProvider, FacebookProvider, $urlRouterProvider) {
 
@@ -62,17 +62,6 @@ app
       templateUrl: 'profile/profile.html',
       controller: 'profileCtrl'
     });
-    /*
-    $ocLazyLoadProvider.config({
-      modules: [{
-        name: 'ngDialog',
-        files: ['bower_components/ngDialog/js/ngDialog.js'
-                ,'bower_components/ngDialog/css/ngDialog.css'
-                ,'bower_components/ngDialog/css/ngDialog-theme-default.css'
-                ,'bower_components/ngDialog/css/ngDialog-theme-plain.css'
-              ]
-      }]
-    });
-    */
+
     FacebookProvider.init('873001566117790');
 }]);

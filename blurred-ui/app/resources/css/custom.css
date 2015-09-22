@@ -53,3 +53,78 @@
 }
 
 /* END PARA NAVBAR */
+
+
+/*UTIL*/
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+/*ASIDE*/
+.user-icon {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.aside {
+  background-color: #78909c;
+  color: #fff;
+  height: 720px;
+}
+
+.full-height {
+  height: 100%;
+}
+
+/*NAVBAR*/
+.custom-navbar{
+  height: 52px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.symbol {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+.color-female {
+  color: pink;
+}
+
+.color-male {
+  color: blue;
+}
+.content-parent-div {
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.content-col-user-icon {
+  margin-top: 40px;
+}
+
+.content-user-icon {
+  max-width: 70px;
+  max-height: 70px;
+  margin-top: -2.75rem;
+}
+
+.content-user-imgs {
+  max-height: 150px;
+  margin-left: 15px;
+}
+
+.slick-imgs {
+  width: 90%;
+  margin-left: 40px;
+}
+
+.scroll-area {
+  height: 668px;
+  overflow: auto;
+}

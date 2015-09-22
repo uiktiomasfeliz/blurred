@@ -66,29 +66,16 @@ app
     * me
     */
     $scope.me = function() {
-      Facebook.api('/me', function(response) {
+      Facebook.api('/me?fields=id,name,picture,gender,photos', function(response) {
         /**
          * Using $scope.$apply since this happens outside angular framework.
          */
         $scope.$apply(function() {
           $scope.user = response;
-          getUserPhoto($scope.user.id);
         });
 
       });
     };
-
-  function getUserPhoto(userID){
-    Facebook.api(userID+'/picture', function(response) {
-      /**
-       * Using $scope.$apply since this happens outside angular framework.
-       */
-      $scope.$apply(function() {
-        $scope.picture = response.data.url;
-      });
-
-    });
-  }
 
   /**
    * Logout
