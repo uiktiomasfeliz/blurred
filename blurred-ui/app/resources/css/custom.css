@@ -1,0 +1,55 @@
+/* PARA PROFILE */
+
+.user-row {
+    margin-bottom: 14px;
+}
+
+.user-row:last-child {
+    margin-bottom: 0;
+}
+
+.dropdown-user {
+    margin: 13px 0;
+    padding: 5px;
+    height: 100%;
+}
+
+.dropdown-user:hover {
+    cursor: pointer;
+}
+
+.table-user-information > tbody > tr {
+    border-top: 1px solid rgb(221, 221, 221);
+}
+
+.table-user-information > tbody > tr:first-child {
+    border-top: 0;
+}
+
+
+.table-user-information > tbody > tr > td {
+    border-top: 0;
+}
+.toppad
+{margin-top:20px;
+}
+
+
+/* PARA NAVBAR */
+
+.primary-header {
+    width: 100%;
+    height: 64px;
+    top: -124px;
+    position: relative;
+    left: 0;
+    background-color: #343434;
+    z-index: -1;
+    -webkit-transition: top .5s ease,z-index .5s linear;
+    -moz-transition: top .5s ease,z-index .5s linear;
+    -ms-transition: top .5s ease,z-index .5s linear;
+    -o-transition: top .5s ease,z-index .5s linear;
+    transition: top .5s ease,z-index .5s linear;
+}
+
+/* END PARA NAVBAR */
