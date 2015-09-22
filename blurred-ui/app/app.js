@@ -2,7 +2,7 @@ var app = angular.module('app', ['ui.router', 'swipe', 'snapscroll', 'oc.lazyLoa
 app
 .config(['$stateProvider', '$ocLazyLoadProvider', 'FacebookProvider', '$urlRouterProvider', function($stateProvider, $ocLazyLoadProvider, FacebookProvider, $urlRouterProvider) {
 
-  $urlRouterProvider.when('', '/');
+  $urlRouterProvider.when('', '/home');
 
   $stateProvider
     .state('index', {
