@@ -2,9 +2,9 @@
 			<div ng-controller="MenuCtrl" id="header">
 				<div class="top">
 					<!-- Logo -->
-						<div id="logo">
+						<div id="logo" >
 							<span class="image avatar48"><img ng-src="{{user.picture.data.url}}" alt="" /></span>
-							<h1 id="title">{{user.name}}</h1>
+							<h1 id="title"><a ui-sref="main.profile">{{user.name}}</a></h1>
 							<p>{{user.gender}}</p>
 						</div>
 					<!-- Nav -->
@@ -17,10 +17,10 @@
 								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
 							-->
 							<ul ng-show="userIsConnected">
-								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
-								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+								<li><a ui-sref="main.home" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+								<li><a  id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
+								<li><a ui-sref="main.profile" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+								<li><a  id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
 							</ul>
 							<a ng-hide="userIsConnected" class="button scrolly" ng-click="IntentLogin()"><i class="fa fa-facebook"></i> Login in</a>
 						</nav>

@@ -38,20 +38,54 @@
 /* PARA NAVBAR */
 
 .primary-header {
-    width: 100%;
+    /*width: 100%;
     height: 64px;
     top: -124px;
     position: relative;
-    left: 0;
+    left: 0;*/
     background-color: #343434;
-    z-index: -1;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    /*z-index: -1;
     -webkit-transition: top .5s ease,z-index .5s linear;
     -moz-transition: top .5s ease,z-index .5s linear;
     -ms-transition: top .5s ease,z-index .5s linear;
     -o-transition: top .5s ease,z-index .5s linear;
-    transition: top .5s ease,z-index .5s linear;
+    transition: top .5s ease,z-index .5s linear;*/
 }
 
+.primary-header .filters-container {
+    -webkit-transition: max-height .3s ease-in;
+    -moz-transition: max-height .3s ease-in;
+    -ms-transition: max-height .3s ease-in;
+    -o-transition: max-height .3s ease-in;
+    transition: max-height .3s ease-in;
+    z-index: 90;
+    display: block;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 600px;
+    max-height: 40px;
+    overflow: hidden;
+    -webkit-box-shadow: -5px -2px 20px rgba(50,50,50,.2);
+    -moz-box-shadow: -5px -2px 20px rgba(50,50,50,.2);
+    box-shadow: -5px -2px 20px rgba(50,50,50,.2);
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transform: translateZ(0);
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+}
 /* END PARA NAVBAR */
 
 
@@ -89,6 +123,7 @@
 .symbol {
   padding-top: 8px !important;
   padding-bottom: 8px !important;
+  margin-left: 5%;
 }
 
 .color-female {
