@@ -46,6 +46,7 @@ app
   $scope.IntentLogin = function() {
     if(!$scope.userIsConnected) {
       $scope.login();
+      $scope.openDialog();
     }
   };
 
