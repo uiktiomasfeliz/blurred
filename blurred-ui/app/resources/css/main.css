@@ -2428,7 +2428,7 @@
 						line-height: 2.25em;
 					}
 
-			body.header-visible #main {
+			body.header-visible #main, body.header-visible header {
 				-moz-transform: translateX(275px);
 				-webkit-transform: translateX(275px);
 				-ms-transform: translateX(275px);
@@ -2457,7 +2457,7 @@
 
 		/* Main */
 
-			#main {
+			#main, header {
 				-moz-backface-visibility: hidden;
 				-webkit-backface-visibility: hidden;
 				-ms-backface-visibility: hidden;

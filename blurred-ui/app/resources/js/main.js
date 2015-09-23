@@ -41,6 +41,8 @@
 				);
 			});
 
+
+		/*
 		// Scrolly links.
 			$('.scrolly').scrolly();
 
@@ -85,17 +87,22 @@
 				});
 
 				$.scrollzer(ids, { pad: 200, lastHack: true });
-
+			*/
 		// Header (narrower + mobile).
 
 			// Toggle.
 				$(
 					'<div id="headerToggle">' +
-						'<a href="#header" class="toggle"></a>' +
+						'<a class="toggle"></a>' +
 					'</div>'
 				)
 					.appendTo($body);
-
+				$('#headerToggle').click(
+				  function () {
+				     $body.toggleClass('header-visible');
+				  }
+				)
+				/*
 			// Header.
 				$('#header')
 					.panel({
@@ -108,7 +115,7 @@
 						target: $body,
 						visibleClass: 'header-visible'
 					});
-
+				*/
 			// Fix: Remove transitions on WP<10 (poor/buggy performance).
 				if (skel.vars.os == 'wp' && skel.vars.osVersion < 10)
 					$('#headerToggle, #header, #main')
