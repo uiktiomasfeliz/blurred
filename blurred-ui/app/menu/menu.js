@@ -35,7 +35,6 @@ app
 
   Facebook.getLoginStatus(function(response) {
     if (response.status == 'connected') {
-      $scope.userIsConnected = true;
       $scope.me();
     }
   });
@@ -73,6 +72,7 @@ app
          */
         $scope.$apply(function() {
           $scope.user = response;
+          $scope.userIsConnected = true;
         });
 
       });
@@ -85,7 +85,7 @@ app
     Facebook.logout(function() {
       $scope.$apply(function() {
         $scope.user   = {};
-        $scope.logged = false;
+        $scope.userIsConnected = false;
       });
     });
   }
